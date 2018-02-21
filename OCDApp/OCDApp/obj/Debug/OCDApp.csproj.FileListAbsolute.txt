@@ -1,0 +1,10 @@
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\bin\Debug\OCDApp.exe.config
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.csprojResolveAssemblyReference.cache
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.frmMainScreen.resources
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.Properties.Resources.resources
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.csproj.GenerateResource.Cache
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\bin\Debug\OCDApp.exe
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\bin\Debug\OCDApp.pdb
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.exe
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.pdb
+c:\users\jfreeman\documents\visual studio 2015\Projects\OCDApp\OCDApp\obj\Debug\OCDApp.ERPLog.resources
