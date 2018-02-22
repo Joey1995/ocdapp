@@ -37,6 +37,7 @@
             this.lblEnd = new System.Windows.Forms.Label();
             this.txtComments = new System.Windows.Forms.TextBox();
             this.btnAddERPLog = new System.Windows.Forms.Button();
+            this.lblComments = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrdERPLog)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,12 +113,23 @@
             this.btnAddERPLog.TabIndex = 8;
             this.btnAddERPLog.Text = "Add To Log";
             this.btnAddERPLog.UseVisualStyleBackColor = true;
+            this.btnAddERPLog.Click += new System.EventHandler(this.btnAddERPLog_Click);
+            // 
+            // lblComments
+            // 
+            this.lblComments.AutoSize = true;
+            this.lblComments.Location = new System.Drawing.Point(336, 170);
+            this.lblComments.Name = "lblComments";
+            this.lblComments.Size = new System.Drawing.Size(56, 13);
+            this.lblComments.TabIndex = 9;
+            this.lblComments.Text = "Comments";
             // 
             // ERPLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 257);
+            this.Controls.Add(this.lblComments);
             this.Controls.Add(this.btnAddERPLog);
             this.Controls.Add(this.txtComments);
             this.Controls.Add(this.lblEnd);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Label lblEnd;
         private System.Windows.Forms.TextBox txtComments;
         private System.Windows.Forms.Button btnAddERPLog;
+        private System.Windows.Forms.Label lblComments;
     }
 }

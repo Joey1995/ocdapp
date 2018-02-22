@@ -17,34 +17,51 @@ namespace OCDApp
             InitializeComponent();
         }
 
+
+        DataTable erpdt = new DataTable();
+
+
         private void ERPLog_Load(object sender, EventArgs e)
         {
-         
-            DataTable erpdt = new DataTable();
-            DataRow dr = null;
             erpdt.Columns.Add(new DataColumn("Date", typeof(string)));
             erpdt.Columns.Add(new DataColumn("Start", typeof(string)));
             erpdt.Columns.Add(new DataColumn("Middle", typeof(string)));
             erpdt.Columns.Add(new DataColumn("End", typeof(string)));
             erpdt.Columns.Add(new DataColumn("Comments", typeof(string)));
-            dr = erpdt.NewRow();
-            dr["Date"] = DateTime.Now;
-            dr["Start"] = string.Empty;
-            dr["Middle"] = string.Empty;
-            dr["End"] = string.Empty;
-            dr["Comments"] = string.Empty;
-            erpdt.Rows.Add(dr);
+
 
             dataGrdERPLog.DataSource = erpdt;
-            
+
+
+        }
+        private void btnAddERPLog_Click(object sender, EventArgs e)
+        {
+            if (txtStart.Text != "" && txtMiddle.Text != "" && txtEnd.Text != "" && txtComments.Text != "")
+            {
+                
+                DataRow dr = null;
+                dr = erpdt.NewRow();
+                dr["Date"] = DateTime.Now;
+                dr["Start"] = txtStart;
+                dr["Middle"] = txtMiddle;
+                dr["End"] = txtEnd;
+                dr["Comments"] = txtComments;
+                erpdt.Rows.Add(dr);
+
+                // dr = erpdt.NewRow();
+                // dr["Date"] = DateTime.Now;
+                // dr["Start"] = string.Empty;
+                // dr["Middle"] = string.Empty;
+                //  dr["End"] = string.Empty;
+                //  dr["Comments"] = string.Empty;
+                
             }
+        }
+
+
+
+        // if (txtStart.Text != "" && txtMiddle.Text != "" && txtEnd.Text != "" && txtComments.Text != "")
 
     }
 
-     
-      
-           // if (txtStart.Text != "" && txtMiddle.Text != "" && txtEnd.Text != "" && txtComments.Text != "")
-          
-               
-        
 }
