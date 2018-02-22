@@ -38,23 +38,28 @@ namespace OCDApp
         {
             if (txtStart.Text != "" && txtMiddle.Text != "" && txtEnd.Text != "" && txtComments.Text != "")
             {
-                
+
                 DataRow dr = null;
                 dr = erpdt.NewRow();
                 dr["Date"] = DateTime.Now;
-                dr["Start"] = txtStart;
-                dr["Middle"] = txtMiddle;
-                dr["End"] = txtEnd;
-                dr["Comments"] = txtComments;
+                dr["Start"] = txtStart.Text;
+                dr["Middle"] = txtMiddle.Text;
+                dr["End"] = txtEnd.Text;
+                dr["Comments"] = txtComments.Text;
                 erpdt.Rows.Add(dr);
 
-                // dr = erpdt.NewRow();
-                // dr["Date"] = DateTime.Now;
-                // dr["Start"] = string.Empty;
-                // dr["Middle"] = string.Empty;
-                //  dr["End"] = string.Empty;
-                //  dr["Comments"] = string.Empty;
-                
+
+                txtStart.Clear();
+                txtMiddle.Clear();
+                txtEnd.Clear();
+                txtComments.Clear();
+
+            }
+
+            else {
+
+                MessageBox.Show("Please Make Sure You Have Filled In All Fields");
+
             }
         }
 
